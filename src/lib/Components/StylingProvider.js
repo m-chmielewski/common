@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Shared.css";
+import "../Shared.css";
 
 const StylingProvider = props => {
  if (props.regularVisionOn) {

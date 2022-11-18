@@ -1,12 +1,13 @@
-import AddItemButton from "./AddItemButton";
-import Arrow from "./Arrow";
-import Button from "./Button";
-import Card from "./Card";
-import FormAlert from "./FormAlert";
-import PageContent from "./PageContent";
-import StylingProvider from "./StylingProvider";
-import SubmitSection from "./SubmitSection";
-import SuggestiveInput from "./SuggestiveInput";
+import AddItemButton from "./Components/AddItemButton";
+import Arrow from "./Components/Arrow";
+import Button from "./Components/Button";
+import Card from "./Components/Card";
+import CategoryWrapper from "./Components/CategoryWrapper";
+import FormAlert from "./Components/FormAlert";
+import PageContent from "./Components/PageContent";
+import StylingProvider from "./Components/StylingProvider";
+import SubmitSection from "./Components/SubmitSection";
+import SuggestiveInput from "./Components/SuggestiveInput";
 
 import useFormData from "./Hooks/useFormData";
 import useFormState from "./Hooks/useFormState";
@@ -21,6 +22,7 @@ export {
  Arrow,
  Button,
  Card,
+ CategoryWrapper,
  FormAlert,
  PageContent,
  StylingProvider,
