@@ -10,6 +10,7 @@ const SuggestiveInput = ({
  options,
  groupName,
  fieldName,
+ dataNature,
  ...props
 }) => {
  return (
@@ -21,10 +22,18 @@ const SuggestiveInput = ({
     value={props.value}
     placeholder={props.placeholder}
     onChange={event => {
-     onInputChange(event.target.value, id.split("-")[2], groupName, fieldName);
+     if (dataNature === "simple") {
+      onInputChange(fieldName, event.target.value);
+     } else {
+      onInputChange(event.target.value, id.split("-")[2], groupName, fieldName);
+     }
     }}
     onFocus={() => {
-     dropdownsHandle(true, id.split("-")[2]);
+     if (dataNature === "simple") {
+      dropdownsHandle(true, 0);
+     } else {
+      dropdownsHandle(true, id.split("-")[2]);
+     }
     }}
    />
    <ul style={{ display: listDown ? "flex" : "none" }}>
@@ -34,12 +43,21 @@ const SuggestiveInput = ({
        <li
         key={option}
         onClick={() => {
-         onInputChange(option, id.split("-")[2], groupName, fieldName);
+         if (dataNature === "simple") {
+          onInputChange(fieldName, option);
+         } else {
+          onInputChange(option, id.split("-")[2], groupName, fieldName);
+         }
         }}
         onKeyDown={event => {
          if (event.key === "Enter") {
-          onInputChange(option, id.split("-")[2], groupName, fieldName);
-          dropdownsHandle(false, id.split("-")[2]);
+          if (dataNature === "simple") {
+           onInputChange(fieldName, option);
+           dropdownsHandle(false, 0);
+          } else {
+           onInputChange(option, id.split("-")[2], groupName, fieldName);
+           dropdownsHandle(false, id.split("-")[2]);
+          }
          }
         }}
         tabIndex={0}

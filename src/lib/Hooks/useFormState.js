@@ -60,7 +60,7 @@ const useFormState = (
  };
 
  const dropdownsHandle = useCallback((isDown, index) => {
-  if (!index) {
+  if (index === undefined) {
    setFormState(current => {
     const mutableArray = current.dropdowns.map(() => false);
     return {
