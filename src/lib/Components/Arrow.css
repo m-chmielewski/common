@@ -2,8 +2,7 @@
  border: solid #fdfffc;
  border-width: 0 0.05rem 0.05rem 0;
  display: block;
- width: 0.4rem;
- height: 0.4rem;
+ padding: 0.2rem;
  transition: 0.3s ease;
 }
 

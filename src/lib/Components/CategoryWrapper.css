@@ -8,3 +8,11 @@
  align-items: center;
  cursor: pointer;
 }
+
+.category-wrapper ul {
+ margin-top: var(--standard-gap);
+}
+
+.regular-vision .category-wrapper ul {
+ margin-top: var(--regular-vision-gap);
+}

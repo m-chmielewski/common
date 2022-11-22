@@ -28,7 +28,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- word-wrap: break-word;
+ word-break: break-all;
 }
 
 html {
@@ -114,6 +114,7 @@ li {
 input,
 textarea {
  flex: 1;
+ width: 100%;
  color: inherit;
  font-family: inherit;
  font-weight: inherit;
