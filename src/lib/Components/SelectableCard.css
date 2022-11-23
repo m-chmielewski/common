@@ -1,0 +1,12 @@
+.selectable-card {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+ cursor: pointer;
+ user-select: none;
+}
+
+.selectable-card.selected {
+ background-color: var(--selected);
+}

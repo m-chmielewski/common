@@ -2,8 +2,14 @@ Axios downgraded to 1.0.0 - check in some time if problem is fixed
 
 Create a component that will simplify forms implementation
 
+useFormData:
+ - useReducer
+
 CategoryWrapper:
  - Expand on enter
 
 Card:
  - Content overflows container
+
+Bacdrop:
+ - Can i put it in ellipsis button

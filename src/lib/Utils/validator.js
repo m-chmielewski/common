@@ -5,7 +5,7 @@ const validator = (formData, criteria) => {
 
  Object.keys(criteria).forEach(key => {
   if (criteria[key] === validationCriteria.REQUIRED) {
-   formInvalid = !formData[key] || formInvalid;
+   formInvalid = Object.keys(formData[key]).length === 0 || formInvalid; //Allows to check for empty strings, objects and arrays
   }
  });
 

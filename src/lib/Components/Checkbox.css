@@ -1,0 +1,19 @@
+.checkbox {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex: unset;
+ width: 0.6rem;
+ height: 0.6rem;
+ border: 1px solid white;
+ border-radius: 50%;
+}
+
+.checkbox img {
+ display: none;
+ width: 70%;
+}
+
+.checkbox.checked img {
+ display: block;
+}

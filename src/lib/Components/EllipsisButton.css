@@ -1,0 +1,47 @@
+.ellipsis-btn-wrapper {
+ position: relative;
+}
+
+.ellipsis-btn-wrapper button {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-shrink: 0;
+ color: var(--blue);
+ width: 1rem;
+ height: 1rem;
+ border: none;
+ border-radius: 50%;
+ background-color: var(--bg-1);
+ cursor: pointer;
+}
+
+.ellipsis-btn-wrapper img {
+ display: block;
+ height: 70%;
+}
+
+.ellipsis-btn-wrapper .overlay {
+ display: none;
+ position: absolute;
+ width: 70vw;
+ max-height: 50vh;
+ top: 0;
+ right: 1rem;
+ padding: var(--standard-padding);
+ border-radius: var(--standard-padding);
+ background-color: var(--bg-2);
+ z-index: 2;
+}
+
+.ellipsis-btn-wrapper .overlay.visible {
+ display: flex;
+}
+
+.section-heading {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ gap: 0.2rem;
+}

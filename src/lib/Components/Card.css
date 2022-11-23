@@ -13,6 +13,6 @@
  border-radius: var(--regular-vision-padding);
 }
 
-.card * {
+.card > * {
  flex: 1;
 }

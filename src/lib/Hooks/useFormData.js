@@ -42,6 +42,21 @@ const useFormData = initialState => {
   []
  );
 
+ const handleArrayChange = (arrayName, value) => {
+  setFormData(current => {
+   let mutableArray = [...current[arrayName]];
+   if (!mutableArray.includes(value)) {
+    mutableArray.push(value);
+   } else {
+    mutableArray = mutableArray.filter(item => item !== value);
+   }
+   return {
+    ...current,
+    [arrayName]: mutableArray,
+   };
+  });
+ };
+
  const handleAddRow = (groupName, data) => {
   setFormData(current => {
    return {
@@ -69,6 +84,7 @@ const useFormData = initialState => {
  return {
   formData: formData,
   handleSimpleInputChange: handleSimpleInputChange,
+  handleArrayChange: handleArrayChange,
   handleNestedInputChange: handleNestedInputChange,
   handleAddRow: handleAddRow,
   handleRemoveRow: handleRemoveRow,
