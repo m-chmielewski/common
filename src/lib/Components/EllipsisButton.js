@@ -6,7 +6,7 @@ import "./EllipsisButton.css";
 
 import Backdrop from "./Backdrop";
 
-const EllipsisButton = ({ options }) => {
+const EllipsisButton = ({ menuItems }) => {
  const menu = useRef(null);
  const backdrop = useRef(null);
 
@@ -36,16 +36,16 @@ const EllipsisButton = ({ options }) => {
     className="overlay"
     ref={menu}
    >
-    {options.map(option => {
+    {menuItems.map(item => {
      return (
       <li
-       key={option.name}
+       key={item.name}
        onClick={() => {
         hideOverlay();
-        option.action();
+        item.action();
        }}
       >
-       {option.name}
+       {item.name}
       </li>
      );
     })}

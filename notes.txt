@@ -11,5 +11,3 @@ CategoryWrapper:
 Card:
  - Content overflows container
 
-Bacdrop:
- - Can i put it in ellipsis button

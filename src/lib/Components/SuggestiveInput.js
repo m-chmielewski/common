@@ -2,6 +2,8 @@ import React from "react";
 
 import "./SuggestiveInput.css";
 
+// import Backdrop from "./Backdrop";
+
 const SuggestiveInput = ({
  id,
  onInputChange,
@@ -15,6 +17,7 @@ const SuggestiveInput = ({
 }) => {
  return (
   <div className="suggestive-input-wrapper">
+   {/* <Backdrop /> */}
    <label htmlFor={id}>{props.label}</label>
    <input
     id={id}

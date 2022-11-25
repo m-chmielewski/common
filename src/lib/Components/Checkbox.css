@@ -5,8 +5,14 @@
  flex: unset;
  width: 0.6rem;
  height: 0.6rem;
- border: 1px solid white;
+ border: 1px solid var(--ellipsis);
  border-radius: 50%;
+}
+
+.regular-vision .checkbox {
+ width: 0.8rem;
+ height: 0.8rem;
+ border-width: 0.5px;
 }
 
 .checkbox img {

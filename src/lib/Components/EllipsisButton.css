@@ -16,6 +16,11 @@
  cursor: pointer;
 }
 
+.regular-vision .ellipsis-btn-wrapper button {
+ height: 1.3rem;
+ width: 1.3rem;
+}
+
 .ellipsis-btn-wrapper img {
  display: block;
  height: 70%;
@@ -24,24 +29,39 @@
 .ellipsis-btn-wrapper .overlay {
  display: none;
  position: absolute;
- width: 70vw;
  max-height: 50vh;
  top: 0;
  right: 1rem;
- padding: var(--standard-padding);
+ gap: 0;
+ padding: 0 var(--standard-padding);
  border-radius: var(--standard-padding);
  background-color: var(--bg-2);
+ overflow-y: auto;
  z-index: 2;
+}
+
+.regular-vision .ellipsis-btn-wrapper .overlay {
+ width: 200px;
+ padding: 0 var(--regular-vision-padding);
+ border-radius: var(--regular-vision-padding);
 }
 
 .ellipsis-btn-wrapper .overlay.visible {
  display: flex;
 }
 
-.section-heading {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- gap: 0.2rem;
+.ellipsis-btn-wrapper li {
+ user-select: none;
+ cursor: pointer;
+ border-bottom: 1px solid var(--divider);
+ padding: var(--standard-padding) 0;
+}
+
+.regular-vision .ellipsis-btn-wrapper li {
+ border-bottom-width: 0.5px;
+ padding: var(--regular-vision-padding) 0;
+}
+
+.ellipsis-btn-wrapper li:last-child {
+ border: none;
 }

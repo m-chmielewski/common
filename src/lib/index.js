@@ -1,3 +1,4 @@
+import ActiveHeading from "./Components/ActiveHeading";
 import AddItemButton from "./Components/AddItemButton";
 import Arrow from "./Components/Arrow";
 import Button from "./Components/Button";
@@ -21,6 +22,7 @@ import validator from "./Utils/validator";
 import validationCriteria from "./Utils/validationCriteria";
 
 export {
+ ActiveHeading,
  AddItemButton,
  Arrow,
  Button,
